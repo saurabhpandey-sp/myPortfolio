@@ -15,7 +15,7 @@ function App() {
     <>
     <Router>
         <Routes>
-         <Route path="/myPortfolio" element={<><Hero/><Abouts/><Cards/><Skills/><Contacts/><Footers/></>} />
+         <Route path="/" element={<><Hero/><Abouts/><Cards/><Skills/><Contacts/><Footers/></>} />
        </Routes>
      </Router>
     </>
