@@ -1,6 +1,5 @@
-import React,{useState} from 'react'
+import React from 'react'
 import { Box, Button,TextField, Typography,styled } from '@mui/material'
-import validator from 'validator'
 import { useMediaQuery } from 'react-responsive'
 
 
