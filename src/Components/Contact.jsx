@@ -93,9 +93,8 @@ const Contacts = () => {
 <TextField id="outlined-basic" label="Name" name='Name' variant='outlined' style={{textAlign:"center", width:"67vw"}}/>
 </Box>
 <Box>
-<TextField id="outlined-basic" label="Email" name='Email' variant='outlined' required style={{textAlign:"center", marginTop:"10px", width:"67vw"}} onChange={(e) => validateEmail(e)}/> <br/>
+<TextField id="outlined-basic" label="Email" name='Email' variant='outlined' required style={{textAlign:"center", marginTop:"10px", width:"67vw"}} /> <br/>
 
-<span style={{color: 'red', fontSize:"10px", marginLeft:"50px", display:"flex"}}>{emailError}</span>
 
 </Box>
 <Box>
