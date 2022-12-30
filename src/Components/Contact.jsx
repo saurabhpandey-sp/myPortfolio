@@ -18,16 +18,6 @@ const Contacts = () => {
     },
   }));
 
-  const [emailError, setEmailError] = useState('')
-  const validateEmail = (e) => {
-    var email = e.target.value
-  
-    if (!validator.isEmail(email)) {
-      setEmailError('Enter valid Email!')
-    } else {
-      setEmailError(null)
-    }
-  }
 
   const imgRess = useMediaQuery({ query: '(min-width: 500px)'})
     const imgMin = useMediaQuery({ query: '(max-width: 500px)'})
@@ -58,9 +48,8 @@ const Contacts = () => {
 <TextField id="outlined-basic" label="Name" name='Name' variant='outlined' style={{textAlign:"center", width:"380px"}}/>
 </Box>
 <Box>
-<TextField id="outlined-basic" label="Email" name='Email' variant='outlined' required style={{textAlign:"center", width:"380px", marginTop:"10px"}} onChange={(e) => validateEmail(e)}/> <br/>
+<TextField id="outlined-basic" label="Email" name='Email' variant='outlined' required style={{textAlign:"center", width:"380px", marginTop:"10px"}} /> <br/>
 
-<span style={{color: 'red', fontSize:"10px", marginLeft:"50px", display:"flex"}}>{emailError}</span>
 
 </Box>
 <Box>
